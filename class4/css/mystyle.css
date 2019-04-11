@@ -1,0 +1,6 @@
+/* mystyle.css */
+body {
+  background-color : yellowgreen; color : black;
+  margin-left : 100px; margin-right : 100px;
+}
+h3 { text-align : center; color : darkred; }
