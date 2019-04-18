@@ -61,7 +61,7 @@ p {
 
 .title-image {
   width:100%;
-  transform: rotate(-5deg);
+  transform: rotate(-5deg);/* 5도 기울여라 */
   position:absolute;
   right: 5%;
 }
