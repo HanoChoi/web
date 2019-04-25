@@ -60,7 +60,7 @@ p {
 
 .title-image {
   width:100%;
-  transform: rotate(-5deg);/* 5도 기울여라 */
+  transform: rotate(-5deg);
   position:absolute;
   right: 5%;
 }
@@ -82,9 +82,10 @@ p {
   margin-bottom: 1rem;
 }
 
-.icon:hover {
+.icon:hover { /* 마우스 올렸을때 */
   color: #ff4c68;
 }
+
 /* Testimonials */
 
 #testimonials {
@@ -114,7 +115,6 @@ p {
   width: 15%;
   margin: 20px 20px 50px;
 }
-
 /* Pricing section */
 
 #pricing {
@@ -124,41 +124,4 @@ p {
 
 .pricing-column {
   padding: 3% 2%;
-}
-
-/* CTA section */
-
-#cta {
-  background-color: #ff4c68;
-  color: #fff;
-  padding: 7% 10%;
-  text-align: center;
-}
-
-.cta-heading {
-  font-family: "dokdo";
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
-
-/* Footer */
-
-#footer {
-  padding: 7% 15%;
-  text-align:center;
-}
-
-.social-icon {
-  margin: 20px 10px;
-}
-
-@media (max-width: 1028px) {
-
-  #title {
-    text-align: center;
-  }
-  .title-image {
-    position: static;
-    transform: rotate(0);
-  }
 }

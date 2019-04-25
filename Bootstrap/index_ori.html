@@ -4,48 +4,54 @@
 <head>
   <meta charset="utf-8">
   <title>Dokdo</title>
-  <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Dokdo|Montserrat:100,400,700,900|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!--넣어야 Font Awesome 사용가능-->
+  <link href="https://fonts.googleapis.com/css?family=Dokdo|Montserrat:400,700|Ubuntu:400,700" rel="stylesheet">
+  <!-- 넣어야 Google Font 사용가능 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
-  <!-- BootStrap -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles_ori.css">
+  <!--맨 마지막에 있는 css를 적용 -->
 
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
 </head>
 
 <body>
 
   <section id="title">
     <div class="container-fluid">
-
       <!-- Nav Bar -->
-
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="">Dokdo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="navbar-nav ml-auto">
-            <li class="navbar-item">
-              <a class="nav-link" href="#footer">Contact</a>
+            <li class="nav-item">
+              <a class="nav-link" href=“”>Contact</a>
             </li>
-            <li class="navbar-item">
-              <a class="nav-link" href="#pricing">Pricing</a>
+            <li>
+              <a class="nav-link" href=“”>Pricing</a>
             </li>
-            <li class="navbar-item">
-              <a class="nav-link" href="#cta">Download</a>
+            <li>
+              <a class="nav-link" href=“”>Download</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
             </li>
           </ul>
         </div>
       </nav>
+
+
 
 
       <!-- Title -->
@@ -54,20 +60,22 @@
         <div class="col-lg-6">
           <h1>푸르다고 <br />그저 바라만 보고 있을 수 없다.</h1>
           <h1>높고 맑게 탈각한 흔적이 <br>저기 있다.</h1>
-          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
-          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+          <button type="button" class="btn btn-lg btn-primary download-button"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-lg btn-outline btn-dark download-button"><i class="fab fa-google-play"></i> Download</button>
         </div>
         <div class="col-lg-6">
-          <img class="title-image" src="images/dokdo02.jpg" alt="dokdo-blue">
+          <img class="title-image" src="images/dokdo02.jpg" alt="dokdo">
         </div>
       </div>
-
-
     </div>
+
   </section>
+
+
   <!-- Features -->
 
   <section id="features">
+    <!--col 선언 안된 사이즈는 12로 됨-->
 
     <div class="row">
       <div class="feature-box col-lg-4">
@@ -96,42 +104,26 @@
   <!-- Testimonials -->
 
   <section id="testimonials">
-
-    <h2>난 갈망하지 않는다. 바다의 끝도 하늘의 시작도<br />내가 찾은 곳은 이미 탈각의 끝이며, <br />기억이 시작이다.</h2>
-    <img src="images/dokdo02.jpg" alt="dokdo-profile">
-    <em>울릉읍, 경상북도</em>
-
-    <!-- <h2 class="testimonial-text">외로움이 묻어나지만 <br />잦은 길손들이 기억하는 그곳은 <br />높고 맑은 깃발, 한자락 동경이다.</h2>
-    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-    <em>Hyunjong, HUFS</em> -->
-
-  </section>
-  <!-- Testimonials -->
-
-  <section id="testimonials">
-
     <div id="testimonial-carousel" class="carousel slide" data-ride="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <h2>난 갈망하지 않는다. 바다의 끝도 하늘의 시작도<br />내가 찾은 곳은 이미 탈각의 끝이며, <br />기억이 시작이다.</h2>
-          <img class="testimonial-image" src="images/dokdo02.jpg" alt="dokdo-profile">
-          <em>울릉군, 경상북도</em>
-        </div>
-        <div class="carousel-item">
-          <h2 class="testimonial-text">외로움이 묻어나지만 <br />잦은 길손들이 기억하는 그곳은 <br />높고 맑은 깃발, 한자락 동경이다.</h2>
-          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-          <em>Hyunjong, HUFS</em>
-        </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h2>난 갈망하지 않는다. 바다의 끝도 하늘의 시작도<br />내가 찾은 곳은 이미 탈각의 끝이며, <br />기억이 시작이다.</h2>
+        <img class="testimonial-image"src="images/dokdo02.jpg" alt="dokdo-profile">
+        <em>울릉읍, 경상북도</em>
       </div>
-      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </a>
-      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </a>
+      <div class="carousel-item" >
+        <h2 class="testimonial-text">외로움이 묻어나지만 <br />잦은 길손들이 기억하는 그곳은 <br />높고 맑은 깃발, 한자락 동경이다.</h2>
+        <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+        <em>Hyunjong, HUFS</em>
+      </div>
+  </div>
+    <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
     </div>
-
-
 
 
 
@@ -155,6 +147,7 @@
 
     <h2>독도를 찾는 분들에게</h2>
     <p>독도 경로와 비용을 제안합니다.</p>
+
 
     <div class="row">
       <div class="pricing-column col-lg-4 col-md-6">
@@ -207,6 +200,23 @@
 
 
 
+
+
+    <h3>능선 경로</h3>
+    <h2>5만원 / 1인</h2>
+    <p>능선 1코스</p>
+    <p>능선 2코스</p>
+    <p>능선 3코스</p>
+    <button type="button">Sign Up</button>
+
+
+    <h3>탐사 경로</h3>
+    <h2>12만원 / 1인</h2>
+    <p>탐사 1코스</p>
+    <p>탐사 2코스</p>
+    <p>탐사 3코스</p>
+    <p>탐사 4코스</p>
+    <button type="button">Sign Up</button>
 
   </section>
 
