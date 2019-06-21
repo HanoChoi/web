@@ -1,0 +1,78 @@
+<HTML>
+
+<HEAD>
+
+  <TITLE>
+
+    읽기 전용 변경하기
+
+  </TITLE>
+
+
+
+  <script language="javascript">
+    function addRow(tableid) {
+      var table = document.getElementById(tableid);
+      var rowlen = table.rows.length;
+      var row = table.insertRow(rowlen - 1); // HTML에서의 권장 표준 문법
+      row.insertCell(0).innerHTML = "첫번째";
+      row.insertCell(1).innerHTML = "두번째";
+      row.insertCell(2).innerHTML = "세번째";
+      row.insertCell(3).innerHTML = "네번째";
+      row.insertCell(4).innerHTML = "다섯번째";
+    }
+  </script>
+
+</HEAD>
+
+<BODY>
+
+
+
+  <table id='table1' width='400' border="1" align="center">
+
+    <colgroup>
+
+      <col width='20%' />
+
+      <col width='20%' />
+
+      <col width='20%' />
+
+      <col width='20%' />
+
+      <col width='20%' />
+
+    </colgroup>
+
+
+
+    <tr id='row1'>
+
+      <td align='center'> 첫번째 </td>
+
+      <td align='center'> 두번째 </td>
+
+      <td align='center'> 세번째 </td>
+
+      <td align='center'> 네번째 </td>
+
+      <td align='center'> 다섯번째 </td>
+
+    </tr>
+
+    <tr id='row2'>
+
+      <td align='center' colspan='5'>
+
+        <input type='button' value='데이터를 테이블에 추가' onClick='addRow("table1")' />
+
+      </td>
+
+    </tr>
+
+  </table>
+
+</BODY>
+
+</HTML>

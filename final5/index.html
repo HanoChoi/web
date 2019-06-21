@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script src="calculator.js"></script>
+  <script>
+    var list = new List();
+
+  </script>
+  <style media="screen">
+    thead td,
+    tfoot td {
+      text-align: center;
+      width: 90px;
+      border: 1px solid blue;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body id="parent">
+  <script type="text/javascript">
+    var button1 = document.createElement('input');
+    button1.type = "button";
+    button1.value = "항목 추가";
+    button1.addEventListener('click', function(){
+      prompts(list);
+    });
+  document.body.appendChild(button1);
+  </script>
+  <table id="targetTable">
+    <thead>
+      <td>구매번호</td>
+      <td>구매항목</td>
+      <td> 단가 </td>
+      <td> 수량 </td>
+      <td> 집계 </td>
+    </thead>
+    <tr>
+      <td colspan="5" align="center" bgcolor="#ccccff">구매항목이 없습니다</td>
+    </tr>
+    <tfoot>
+      <td colspan="3">총계</td>
+      <td id="countAll"></td>
+      <td id = "sumAll"></td>
+    </tfoot>
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script src="calculator.js"></script>
+  <style media="screen">
+    thead td,
+    tfoot td {
+      text-align: center;
+      width: 90px;
+      border: 1px solid blue;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body id="parentTable">
+  <input type="button" value="항목 추가" onclick="add_row()">
+  <input type="button" value="항목 삭제" onclick="delete_Row()">
+
+  <div id="setTable"></div>
+  <table id="targetTable">
+    <thead>
+      <td>구매번호</td>
+      <td>구매항목</td>
+      <td> 단가 </td>
+      <td> 수량 </td>
+      <td> 집계 </td>
+    </thead>
+    <tfoot>
+      <td colspan="3">총계</td>
+      <td>0</td>
+      <td>0</td>
+    </tfoot>
+  </table>
+
+  <script>
+    var myList = new MyList();
+    //myList.printTest();
+    //myList.manageTable();
+    //myList.printTest2();
+    //myList.printTest3();
+    //myList.printTest4();
+    //manageTable(myList);
+  </script>
+</body>
+
+</html>

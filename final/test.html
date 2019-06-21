@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div id="setTable"></div>
+
+
+  <script type="text/javascript">
+    var date = new Date();
+    var string = date.toLocaleString();
+
+    var td = document.createElement("TD");
+    td.innerHTML = string;
+    td.style.border = "1px solid #92acbb";
+    td.style.padding = "3px";
+
+    var tr = document.createElement("TR");
+    tr.appendChild(td);
+
+    var table = document.createElement("TABLE");
+    table.appendChild(tr);
+
+    setTable.appendChild(table);
+  </script>
+</body>
+
+</html>
